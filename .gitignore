@@ -1,0 +1,39 @@
+﻿# Secrets and authentication material
+.env
+.env.*
+!.env.example
+*.keytab
+*.krb5
+krb5cc*
+*.p12
+*.pfx
+*.pem
+*.key
+
+# Logs and runtime files
+*.log
+logs/
+*.pid
+*.sock
+
+# Backups and archives
+*.bak
+*.backup
+*.old
+*.orig
+*.tar
+*.tar.gz
+*.zip
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
