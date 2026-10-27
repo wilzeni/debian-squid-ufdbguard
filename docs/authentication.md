@@ -76,7 +76,3 @@ These settings support domain membership and identity integration. Configuration
 The ufdbGuard configuration defines multiple user sources through `execuserlist` scripts. These sources can provide information used to associate clients with the appropriate filtering policies.
 
 The configuration also supports sources based on client IP addresses, allowing filtering behavior to be associated with specific clients or groups of clients.
-
-Filtering policies reference these sources and apply URL categories to determine which destinations are allowed or blocked. The effective behavior depends on source definitions, category rules, policy order, and the default policy.
-
-For public examples, internal source names, script paths, organizational group names, and sensitive filtering rules should be replaced with generic values.
