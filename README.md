@@ -36,7 +36,6 @@ debian-squid-ufdbguard/
 │   ├── smb.conf
 │   └── krb5.conf
 ├── docs/
-│   ├── architecture.md
 │   ├── authentication.md
 │   └── installation.md
 ├── .gitignore
@@ -51,7 +50,6 @@ debian-squid-ufdbguard/
 
 The documentation in the `docs/` directory:
 
-- `architecture.md` — system architecture and components.
 - `installation.md` — installation and configuration guidance.
 - `authentication.md` — AD authentication and domain integration.
 
