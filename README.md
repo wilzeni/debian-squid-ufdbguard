@@ -69,4 +69,4 @@ See [`configs/README.md`](configs/README.md) for information about LDAP integrat
 ---
 ## License
 
-A license has not yet been specified. Until one is added to the repository, permission to reuse or redistribute this project should not be assumed.
+Licensed under the MIT License.
