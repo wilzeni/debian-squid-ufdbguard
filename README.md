@@ -1,40 +1,74 @@
-﻿
-# Debian Squid Proxy with ufdbGuard
+﻿# Debian Squid Proxy with ufdbGuard
 
 A Linux-based web proxy solution built with Debian 12, Squid, and ufdbGuard, providing centralized web access control, URL filtering, and Active Directory integration.
 
-## Overview
-
-This project documents the deployment, operation, and ongoing refinement of a web proxy solution integrated with a Windows Active Directory environment.
-
-The solution is operational in a production network. Current work focuses on configuration refinement, policy validation, troubleshooting, and improving documentation and maintainability.
-
-## Architecture
-
-- **Debian 12:** proxy server operating system.
-- **Squid:** HTTP and HTTPS proxy service.
-- **ufdbGuard:** URL filtering and access policy enforcement.
-- **Active Directory and Winbind:** domain integration and user/group information.
-- **Kerberos:** authentication for domain-related services.
+---
 
 ## Key Features
 
-- Centralized web access control.
-- URL filtering based on defined policies and categories.
-- User and group-based access policies.
-- Integration with Active Directory.
-- Operational logging and troubleshooting.
-- Automated maintenance tasks and service management.
+- **Squid Proxy:** Centralized HTTP and HTTPS proxy service.
+- **UFDBGuard:** URL filtering and access policy enforcement.
+- **Active Directory:** User and group-based access policies.
+- **Kerberos:** Authentication for domain-related services.
+- **Access Control:** Filtering based on configured categories and rules.
+- **Service Management:** Configuration and maintenance of proxy components.
 
-## Project Status
+---
 
-**Operational in production — ongoing refinement.**
+## Architecture
 
-The proxy is in active use. Development activities focus on improving reliability, validating access policies, refining authentication and user/group integration, and documenting administrative procedures.
+- **Debian 12:** Proxy server operating system.
+- **Squid:** Handles proxy requests from clients.
+- **UFDBGuard:** Evaluates URL filtering rules and policies.
+- **Active Directory and Winbind:** Domain integration and user/group information.
+- **Kerberos:** Authentication for domain-related services.
 
+---
 
+## Project Structure
 
-## Disclaimer
+```text
+debian-squid-ufdbguard/
+├── configs/
+│   ├── README.md
+│   ├── squid.conf
+│   ├── ufdbGuard.conf
+│   ├── smb.conf
+│   └── krb5.conf
+├── docs/
+│   ├── architecture.md
+│   ├── authentication.md
+│   └── installation.md
+├── .gitignore
+└── README.md
+```
 
-This is an independent technical documentation project. Public materials do not include confidential company configuration or production credentials.
+---
 
+## Getting Started
+
+### Documentation
+
+The documentation in the `docs/` directory:
+
+- `architecture.md` — system architecture and components.
+- `installation.md` — installation and configuration guidance.
+- `authentication.md` — AD authentication and domain integration.
+
+### Configuration Examples
+
+The `configs/` directory contains sanitized configuration examples:
+
+| File | Description
+|------|---
+| `squid.conf`      | Squid proxy configuration
+| `ufdbGuard.conf`  | UFDBGuard filtering policies
+| `smb.conf`        | Samba and Active Directory integration
+| `krb5.conf`       | Kerberos configuration
+
+See [`configs/README.md`](configs/README.md) for information about LDAP integration and UFDBGuard domain lists.
+
+---
+## License
+
+A license has not yet been specified. Until one is added to the repository, permission to reuse or redistribute this project should not be assumed.
