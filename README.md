@@ -53,9 +53,9 @@ The documentation in the `docs/` directory:
 - `installation.md` — installation and configuration guidance.
 - `authentication.md` — AD authentication and domain integration.
 
-### Configuration Examples
+### Configuration
 
-The `configs/` directory contains sanitized configuration examples:
+The `configs/` directory contains configuration examples:
 
 | File | Description
 |------|---
